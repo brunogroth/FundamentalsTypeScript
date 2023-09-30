@@ -63,7 +63,7 @@ class Philosopher extends User {
   createdAt: String;
 
   constructor(name: string, email: string, createdAt: String) {
-    super(name, email); // Passa os parametros recebidos no construtor para a classe pai User
+    super(name, email); // Super para passar os parâmetros recebidos no construtor para a classe pai User
     this.createdAt = createdAt;
   }
   public getName(): string {
@@ -71,7 +71,7 @@ class Philosopher extends User {
   }
 
   public userPermissionId(): number {
-    return super.userPermissionId() + 1; // super para acessar os atributos da classe pai
+    return super.userPermissionId() + 1; // usa o super para acessar os atributos da classe pai
   }
 }
 
